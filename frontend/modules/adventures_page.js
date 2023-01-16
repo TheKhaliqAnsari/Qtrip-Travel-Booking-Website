@@ -74,7 +74,6 @@ function filterByCategory(list, categoryList) {
   // TODO: MODULE_FILTERS
   // 1. Filter adventures based on their Category and return filtered list
   let filteredList = [];
-  console.log(list);
   list.filter(function (e) {
     if (categoryList.includes(e.category)) filteredList.push(e);
   });
@@ -153,10 +152,8 @@ function generateFilterPillsAndUpdateDOM(filters) {
    // console.log(categoryList[i]);
     li.push(categoryList[i]);
   }
-  console.log(li);
   for(let i=0;i<li.length;i++)
   {
-    console.log(li[i]);
     var div=document.createElement("div");
     div.setAttribute("class","category-filter");
     div.innerText=li[i];

@@ -3,7 +3,7 @@ import config from "../conf/index.js";
 
 async function init() {
   // Added console.log As first task ->
-  console.log("From init()");
+
 
   //Fetches list of all cities along with their images and description
   let cities = await fetchCities();
